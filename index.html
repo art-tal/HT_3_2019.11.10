@@ -20,7 +20,42 @@
 
 		</header>
 
-		
+		<main>
+
+			<h1>Settings</h1>
+
+			<div class="row">
+				<h2>Avatar</h2>
+				<h2>Student's info</h2>
+				<h2>Change password</h2>
+			</div>
+
+			<form action="#" method="post" name="settings">
+				<fieldset class="photo">
+					<img src="images/av_256.png" alt="photo">
+					<!-- <iframe src="" name="" frameborder="0"></iframe> -->
+					<button>Choose photo</button>
+				</fieldset>
+
+				<fieldset class="info">
+					<input type="text" placeholder="First name" pattern="[A-Za-z]{2,}" required>
+					<input type="text" pattern="[A-Za-z]{2,}" required placeholder="Last name">
+					<input type="email" required placeholder="Email">
+					<input type="tel" placeholder="Phone number" pattern="[0-9]{10}">
+					<input type="text"  pattern="[A-Za-z0-9\s]+$" required placeholder="Address">
+					<input type="text" placeholder="FB link">
+					<button>Save changes</button>
+				</fieldset>
+
+				<fieldset class="pwd">
+					<input type="password" placeholder="Old password" pattern="[A-Za-z0-9]{8,}" required>
+					<input type="password" pattern="[A-Za-z0-9]{8,}" required placeholder="New password">
+					<input type="password"pattern="[A-Za-z0-9]{8,}" required placeholder="Repeat password">
+					<button>Save changes</button>
+				</fieldset>
+			</form>
+
+		</main>
 
 	</div>
 </body>
